@@ -1,20 +1,23 @@
 #app {
+  background-color: #e8e8e8;
   // 主体区域
   .main-container {
     min-height: 100%;
     transition: margin-left 0.28s;
     position: relative;
-    top: 50px;
+    top: 60px;
+    left: 10px;
+    right: 10px;
    // margin-left: 180px;
   } 
   .app-main {
     position: relative;
-    margin-left: 180px;
+    margin-left: $sideBarWidth;
   }
   // 侧边栏
   
   .sidebar-container {
-    width: 180px !important;
+    width: $sideBarWidth !important;
     height: 100%;
     position: absolute;
     font-size: 0px;
