@@ -1,24 +1,26 @@
 #app {
-
-  // 主体区域 Main container
+  // 主体区域
   .main-container {
     min-height: 100%;
-    transition: margin-left .28s;
-    margin-left: $sideBarWidth;
+    transition: margin-left 0.28s;
     position: relative;
+    top: 50px;
+   // margin-left: 180px;
+  } 
+  .app-main {
+    position: relative;
+    margin-left: 180px;
   }
-
-  // 侧边栏 Sidebar container
+  // 侧边栏
+  
   .sidebar-container {
-    transition: width 0.28s;
-    width: $sideBarWidth !important;
+    width: 180px !important;
     height: 100%;
-    position: fixed;
+    position: absolute;
     font-size: 0px;
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: 1001;
     overflow: hidden;
 
     //reset element-ui css
@@ -86,7 +88,7 @@
       width: 36px !important;
     }
 
-    .main-container {
+    .app-main {
       margin-left: 36px;
     }
 
